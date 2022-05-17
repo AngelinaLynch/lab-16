@@ -1,0 +1,120 @@
+
+body{
+  /* body changes the background page I added a background photo so thats added to body.You can also add a type of font to use throughout the page */
+  display: block;
+ background-image:url('https://blueaestheticwallpapers.files.wordpress.com/2021/01/cute-aesthetic-wallpapers-1.jpg?w=1024');
+background-attachment: fixed;
+background-position: center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  color: white;
+  font-family:'trebuchet ms';
+  display:block;
+}
+/* wrapper changes the box itself giving the height and centering it giving it its border color etc */
+.wrapper{
+  margin:40px 0px;
+  text-align:center;
+  background-color:pink;
+  border:4px solid hotpink;
+  border-radius: 20px;
+  width:600px;
+  height:500px;
+  top:50%;
+  padding:4px;
+  padding-bottom: 20px;
+  display:block;
+  left:50%;
+  outline:darkpink solid, 7px;
+  outline-offset:-15px;
+  overflow:hidden;
+}
+/* changes eveything that was hidden */
+.section_userform{
+  width:75%;
+  display:block;
+  margin:0 auto;
+  color:hotpink;
+}
+/* input label just controls the size of the "name email and phone" words in this case the size */
+.input_Label{
+  width:24px;
+}
+/*Makes the text have shadow and makes it bigger  */
+.break {
+  display: block;
+  width: 100%;
+  margin: 28px 0;
+  font-size: 24px;
+  text-shadow: 2px 2px 0px #f9e6f6;
+}
+/* Hr is the line that seperates Register from name*/
+hr {
+  width: 60%;
+  border: 2px solid #ff9eed;
+}
+/* text box controls the characteristics of the text box (where you would answer the questions)*/
+.textbox {
+  width: 50%;
+  height: 1.8em;
+  box-sizing: content-box;
+  border: 1px solid hotpink;
+  padding-left: 1em;
+  background-color:mintcream;
+  
+}
+/* button fixes the button an adds a different shape border and padding size */
+.button {
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  border:2px solid hotpink;
+}
+/* hover allows the button to change when the mouse goes over it in this case it changes the background to pink and the border to white */
+.button:hover {
+  background-color: hotpink;
+  color: white;
+  border: 2px solid white;
+  transform: scale(1.05);
+}
+/* this edits the buttons placement in the box */
+.buttonWrapper {
+  display: grid;
+  justify-content: center;
+}
+
+.section_info {
+  text-align: center;
+  margin: 1em;
+}
+/* line lets the line above name change i made it white in this case */
+#line {
+  border-color: white;
+}
+/* this changes the width and color of the text which shows once your done and you click submit*/
+.result {
+  width: 45%;
+  color: #ff9999;
+  
+}
+#before{
+  opacity:1;
+  display:block;
+}
+/* this hides the div after so it doesnt show in the box like it did before */
+#after {
+  display: none;
+  opacity: 0;
+}
+
+input_username_button:focus #after {
+  display: block;
+  opacity: 1;
+}
+
+input_username_button:focus #before {
+  display: hidden;
+  opacity: 0;
+  z-index:-1;
+}
